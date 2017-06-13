@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+/* @connormoulton */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto|Source+Code+Pro');
+
+.wrapper{
+    height: 100%;
+    width: 100%;
+    position:absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    overflow: none;
+    font-family: 'Roboto', Helvetica, sans-serif;
+	text-transform: uppercase;
+}
+ul {
+	text-align: center;
+	font-size: 1.5em;
+	line-height: 2em;
+	z-index: 0;
+}
+.meta {
+	position: fixed;
+	top: 1%; right: 1%;
+	justify-content: right;
+	text-align: right;
+	font-size: .75em;
+	line-height: 2em;
+	font-family: 'Source Code Pro', monospace;
+}
+.bg {
+	margin: 0;
+	padding: 0;
+	vertical-align: center;
+	position: absolute;
+	z-index: -100;
+	top:0; left: 0;
+	height : 100%;
+	max-width: 100vw;
+	overflow: hidden;
+}
+li{
+	list-style-type: none;}
+a {
+	text-decoration: none;
+	color: rgba(0, 0, 0, .8);
+}
+@media only screen and (max-device-width : 700px) and (orientation : portrait) {
+	nav {
+		font-size: 2em;
+		line-height: 2.5em;
+	}
+}
